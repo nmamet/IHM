@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="404.0" prefWidth="216.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller" >
+    <bottom>
+        <HBox alignment="TOP_RIGHT" prefHeight="25.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="btnCancel" alignment="BASELINE_RIGHT" mnemonicParsing="false" text="Cancel" textAlignment="CENTER" />
+                <Button fx:id="btnOpen" alignment="BASELINE_RIGHT" disable="true" mnemonicParsing="false" text="Open" textAlignment="CENTER" />
+            </children>
+            <opaqueInsets>
+                <Insets right="20.0" top="10.0" />
+            </opaqueInsets>
+        </HBox>
+    </bottom>
+    <top>
+        <ComboBox fx:id="comboxRep" prefHeight="27.0" prefWidth="218.0" BorderPane.alignment="CENTER" />
+    </top>
+    <center>
+        <ListView fx:id="listViewFile" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+    </center>
+</BorderPane>
